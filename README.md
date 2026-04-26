@@ -84,8 +84,8 @@ github_reid/
 
 ### 4. What Each File Does
 
-1- Main application
- demo_app.py
+#### Main application
+1- demo_app.py
 
 This is the main entry point of the project.
 It launches the interactive demo, typically through Streamlit, and allows the user to:
@@ -99,8 +99,8 @@ It launches the interactive demo, typically through Streamlit, and allows the us
 
 ---
 
-2- Dataset and metadata
- data/VeRi/
+#### Dataset and metadata
+2- data/VeRi/
 
 Copy of the VeRi dataset used by the project.
 
@@ -142,8 +142,8 @@ Used only for display and interpretation in the demo.
 
 ---
 
-7- Embeddings and retrieval files
- image_embeddings.csv
+#### Embeddings and retrieval files
+7- image_embeddings.csv
 
 File containing exported embeddings for images.
 Each row usually includes:
@@ -177,7 +177,7 @@ It typically maps FAISS entries back to:
 
 ---
 
-Model files
+#### Model files
 10- models/fusionNet-model/
  fusionnet.pth
 
@@ -231,7 +231,7 @@ The checkpoint is used for:
 
 ---
 
-Utility scripts
+#### Utility scripts
 16- utils/export_image_embeddings_transreid.py
 
 Uses the trained TransReID model to generate embeddings for dataset images.
@@ -264,7 +264,7 @@ Helper functions for loading data files, querying metadata, and supporting the d
 
 ---
 
-Pipeline Overview
+## Pipeline Overview
 
 The system works in the following stages:
 
@@ -279,7 +279,7 @@ The system works in the following stages:
 
 ---
 
-Requirements
+## Requirements
 
 1- Install the required Python packages before running the demo.
 
@@ -319,7 +319,7 @@ streamlit run demo_app.py
 
 ---
 
-Typical Demo Workflow
+## Typical Demo Workflow
 
 Inside the app, the user can typically:
 
@@ -334,7 +334,7 @@ Inside the app, the user can typically:
 
 ---
 
-Rebuilding Files (Optional)
+## Rebuilding Files (Optional)
 
 If the prebuilt files are missing, the pipeline can be rebuilt in stages.
 
@@ -350,7 +350,7 @@ streamlit run demo_app.py
 
 ---
 
-Notes
+## Notes
 The repository includes trained model assets and precomputed retrieval files to simplify running the demo.
 
 If file paths in demo_app.py are hardcoded, update them to match your local folder structure before running.
