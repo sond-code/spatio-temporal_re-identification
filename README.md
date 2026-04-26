@@ -32,10 +32,10 @@ https://drive.google.com/drive/folders/1EmTHHVNvhXDX12fDXoU1Q7E-lpQZbqHM?usp=dri
 git clone https://github.com/sond-code/spatio-temporal_re-identification.git
 cd spatio-temporal_re-identification
 
+```
 
----
 
-## Project Structure
+## 3. Project Structure
 
 ```text
 github_reid/
