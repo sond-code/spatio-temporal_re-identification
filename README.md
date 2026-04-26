@@ -97,7 +97,7 @@ It launches the interactive demo, typically through Streamlit, and allows the us
 - use FusionNet to produce a final ranking
 - visualize retrieved images and scores
 
----
+
 
 #### Dataset and metadata
 2- data/VeRi/
@@ -140,7 +140,7 @@ Used to estimate how likely a vehicle transition is from one camera to another o
 Reference image for the camera environment / map visualization.
 Used only for display and interpretation in the demo.
 
----
+
 
 #### Embeddings and retrieval files
 7- image_embeddings.csv
@@ -175,7 +175,6 @@ It typically maps FAISS entries back to:
 - other metadata needed for ranking and display
 
 
----
 
 #### Model files
 10- models/fusionNet-model/
@@ -229,7 +228,7 @@ The checkpoint is used for:
 - evaluation
 - demo retrieval
 
----
+
 
 #### Utility scripts
 16- utils/export_image_embeddings_transreid.py
