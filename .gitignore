@@ -1,0 +1,9 @@
+data/
+*.zip
+*.csv
+*.index
+*.pkl
+*.pth
+logs/
+__pycache__/
+.venv/

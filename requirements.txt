@@ -1,0 +1,9 @@
+PyTorch
+torchvision
+timm
+yacs
+opencv-python
+scikit-learn
+faiss-cpu
+numpy
+Pillow
