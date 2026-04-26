@@ -34,8 +34,9 @@ cd spatio-temporal_re-identification
 
 ```
 
+---
 
-## 3. Project Structure
+### 3. Project Structure
 
 ```text
 github_reid/
@@ -77,10 +78,11 @@ github_reid/
     ├── db_utils.py                   # Utility functions for loading/querying stored data
     └── export_image_embeddings_transreid.py # Exports image embeddings using trained TransReID
 
+```
 
+---
 
-
-What Each File Does
+### 4. What Each File Does
 
 1- Main application
  demo_app.py
@@ -95,6 +97,7 @@ It launches the interactive demo, typically through Streamlit, and allows the us
 - use FusionNet to produce a final ranking
 - visualize retrieved images and scores
 
+---
 
 2- Dataset and metadata
  data/VeRi/
@@ -137,6 +140,7 @@ Used to estimate how likely a vehicle transition is from one camera to another o
 Reference image for the camera environment / map visualization.
 Used only for display and interpretation in the demo.
 
+---
 
 7- Embeddings and retrieval files
  image_embeddings.csv
@@ -171,6 +175,7 @@ It typically maps FAISS entries back to:
 - other metadata needed for ranking and display
 
 
+---
 
 Model files
 10- models/fusionNet-model/
@@ -224,7 +229,7 @@ The checkpoint is used for:
 - evaluation
 - demo retrieval
 
-
+---
 
 Utility scripts
 16- utils/export_image_embeddings_transreid.py
@@ -257,7 +262,7 @@ Parses dataset file names and constructs metadata such as:
 Helper functions for loading data files, querying metadata, and supporting the demo pipeline.
 
 
-
+---
 
 Pipeline Overview
 
@@ -272,7 +277,7 @@ The system works in the following stages:
 - Return final ranked matches
 - Display results in the demo app
 
-
+---
 
 Requirements
 
@@ -280,16 +285,17 @@ Requirements
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 A typical environment may require:
 
+```
 pip install torch torchvision torchaudio
 pip install streamlit
 pip install faiss-cpu
 pip install numpy pandas opencv-python pillow scikit-learn
 pip install pyyaml scipy matplotlib
-
+```
 
 
 2- Before Running the Demo. Make sure the following are available correctly:
@@ -311,6 +317,7 @@ pip install streamlit
 streamlit run demo_app.py
 
 
+---
 
 Typical Demo Workflow
 
@@ -325,6 +332,7 @@ Inside the app, the user can typically:
 - evaluate whether the retrieved candidates are plausible matches
 
 
+---
 
 Rebuilding Files (Optional)
 
@@ -340,6 +348,7 @@ python utils/build_topology_from_train_names.py
 4. Run the demo
 streamlit run demo_app.py
 
+---
 
 Notes
 The repository includes trained model assets and precomputed retrieval files to simplify running the demo.
@@ -348,24 +357,11 @@ If file paths in demo_app.py are hardcoded, update them to match your local fold
 For best results, use the same Python environment in which the project was originally tested.
 
 
-Recommended Execution Order for a New User
-
-If cloning and running on a new machine:
-
-Clone the repository    
-Activate the correct Python environment
-Install dependencies
-Confirm dataset and model paths
-
-
-Run:
-
-streamlit run demo_app.py
+---
 
 
 
 This project demonstrates a full spatio-temporal vehicle re-identification workflow using TransReID, FAISS, topology-aware ranking, and FusionNet-based score fusion.
-
 
 
 
